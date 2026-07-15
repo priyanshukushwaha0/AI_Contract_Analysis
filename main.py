@@ -32,6 +32,7 @@ for contract in contracts:
 
 df = pd.DataFrame(rows)
 
+df.to_csv("output/contracts.csv", index=False)
 
 df.to_json(
     "output/contracts.json",
